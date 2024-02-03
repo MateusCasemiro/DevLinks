@@ -8,10 +8,10 @@ function toogleMode() {
 
   if (html.classList.contains("light")) {
     //se tiver light mode imagem light
-    img.setAttribute("src", "./assets/avatar-light.png")
+    img.setAttribute("src", "./assets/logo-dark.png")
   } else {
     //sem light mode imagem normal
-    img.setAttribute("src", "./assets/avatar.png")
+    img.setAttribute("src", "./assets/logo.png")
   }
 
   //substituir imagem

@@ -6,7 +6,7 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-mobile.jpg);
+  --bg-url: url(./assets/bg-mobile-dark.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(255, 255, 255, 0.02);
@@ -16,7 +16,7 @@
 
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --bg-url: url(./assets/bg-mobile-light-orange.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -40,7 +40,7 @@ body * {
 #container {
   width: 100%;
   max-width: 588px;
-  height: 712px;
+
   margin: 56px auto 0px;
   padding: 0 24px;
 }
@@ -144,7 +144,6 @@ ul li a:hover {
   display: flex;
   justify-content: center;
 
-  padding: 24px 0;
   font-size: 24px;
 }
 
@@ -171,12 +170,35 @@ footer {
 
 @media (min-width: 700px) {
   :root {
-    --bg-url: url(./assets/bg-desktop.jpg);
+    --bg-url: url(./assets/bg-desktop-orange-dark.jpg);
   }
 
   .light {
-    --bg-url: url(./assets/bg-desktop-light.jpg);
+    --bg-url: url(./assets/bg-desktop-orange.jpg);
   }
+}
+
+/* barra de rolagem */
+
+::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff4000; /* Cor do polegar da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff5e1e; /* Cor do polegar da barra de rolagem ao passar o mouse */
+}
+
+::-webkit-scrollbar-button:start,
+::-webkit-scrollbar-button:end {
+  background-color: #ff4000; /* Cor das setas da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #201f1b; /* Cor de fundo da barra de rolagem */
 }
 
 /* animações */
